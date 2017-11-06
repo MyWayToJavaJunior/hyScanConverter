@@ -1,6 +1,8 @@
 package ru.anton.hyscanconverter.csv;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -22,7 +24,7 @@ public class CsvReader {
     }
 
     public void loadCsv(Path path) throws IOException {
-        List<String> rawRecords = Files.readAllLines(path);
+        List<String> rawRecords = Files.readAllLines(path, Charset.forName("cp1251"));
         parseHeader(rawRecords.get(0));
         rawRecords.remove(0);
         parseRecords(rawRecords);

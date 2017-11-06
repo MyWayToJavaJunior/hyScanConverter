@@ -5,6 +5,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import ru.anton.hyscanconverter.csv.CsvReader;
+import ru.anton.hyscanconverter.exceptions.ParseCoordsException;
 import ru.anton.hyscanconverter.kml.KmlDocument;
 import ru.anton.hyscanconverter.kml.PlaceMark;
 
@@ -21,13 +22,16 @@ import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class CsvToKmlConverter {
 
     private Settings settings;
     private CsvReader csvReader;
 
-    public String convert(CsvReader reader, Settings settings) throws IOException, TransformerException, ParserConfigurationException {
+    public String convert(CsvReader reader, Settings settings) throws IOException, TransformerException, ParserConfigurationException, ParseCoordsException {
         this.csvReader = reader;
         this.settings = settings;
 
@@ -35,7 +39,8 @@ public class CsvToKmlConverter {
         return convertKmlDocumentToXml(document);
     }
 
-    public String convertKmlDocumentToXml(KmlDocument document) throws ParserConfigurationException, TransformerException {
+
+    public String convertKmlDocumentToXml(KmlDocument document) throws ParserConfigurationException, TransformerException, ParseCoordsException {
 
         DocumentBuilderFactory dbFactory =
                 DocumentBuilderFactory.newInstance();
@@ -77,9 +82,10 @@ public class CsvToKmlConverter {
         listStyleElem.appendChild(bgColorElement);
         bgColorElement.appendChild(doc.createTextNode("00ffffff"));
         //
-        document.getPlaceMarks().forEach(p->{
-            folderElem.appendChild(createPlaceMarkElement(p, doc));
-        });
+        for (PlaceMark placeMark :
+                document.getPlaceMarks()) {
+            folderElem.appendChild(createPlaceMarkElement(placeMark, doc));
+        }
 
 
         /*TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -103,7 +109,7 @@ public class CsvToKmlConverter {
         return writer.toString();
     }
 
-    private Element createPlaceMarkElement(PlaceMark placeMark, Document doc){
+    private Element createPlaceMarkElement(PlaceMark placeMark, Document doc) throws ParseCoordsException {
         Element mark = doc.createElement("Placemark");
         //
         Element nameElement = doc.createElement("name");
@@ -164,22 +170,28 @@ public class CsvToKmlConverter {
 
     private KmlDocument convertCsvToKmlDokument() throws IOException {
         KmlDocument kmlDocument = new KmlDocument();
-
         kmlDocument.setName(settings.getCategoryName());
 
-        final int imageColumn = csvReader.getHeader().indexOf(settings.getImgColumn());
+        final int imageColumn = settings.getImgColumn().equals("Нет") ? 0 : csvReader.getHeader().indexOf(settings.getImgColumn());
         final int coordsColumn = csvReader.getHeader().indexOf(settings.getCoordsColumn());
         final int markNameColumn = csvReader.getHeader().indexOf(settings.getMarkNameColumn());
         final int galsColumn = csvReader.getHeader().indexOf("Галс");
+        final int headerSize = csvReader.getHeader().size();
+
+        System.out.println(settings);
 
         csvReader.getRecords().forEach(record->{
             PlaceMark placeMark = new PlaceMark();
-            if (!(record.length<csvReader.getHeader().size())){
+            if ((coordsColumn <= record.length-1)){
                 placeMark.setCoordinates(record[coordsColumn]);
 
-                String description = "<img src='"+settings.getPicturesPath().toString()+"\\"+record[imageColumn]+"'/>";
+                if (!settings.getImgColumn().equals("Нет") && (imageColumn <= record.length-1)){
+                    String description = "<img src='"+settings.getPicturesPath().toString()+"\\"+record[imageColumn]+"'/>";
+                    placeMark.setDescription(description);
+                    System.out.println("set");
+                } else placeMark.setDescription("No images");
 
-                placeMark.setDescription(description);
+
                 placeMark.setIconPath(settings.getIconPath().toString());
                 placeMark.setName(record[markNameColumn]+"_галс"+Integer.parseInt(record[galsColumn]));
                 kmlDocument.addPlaceMark(placeMark);
@@ -189,12 +201,24 @@ public class CsvToKmlConverter {
         return kmlDocument;
     }
 
-    private String prepareCoords(String coordinates) {
-        String[] coords = coordinates.split(" ");
+    private String prepareCoords(String coordinates) throws ParseCoordsException {
 
-        String newCoords = coords[1]+","+coords[0]+",0";
-        newCoords = newCoords+",0";
-        System.out.println(newCoords);
+        coordinates = coordinates.replace(",", "").replace("  ", " ");
+
+        String[] coords = coordinates.split(" ");
+        String newCoords = "";
+        try {
+            if (coords[0].equals("")) {
+                newCoords = coords[2].replace(" ","")+","+coords[1].replace(" ","");
+                newCoords = newCoords.replaceAll("°E","").replaceAll("°N", "");
+            } else newCoords = coords[1]+","+coords[0];
+
+            newCoords = newCoords+",0,0";
+        } catch (ArrayIndexOutOfBoundsException e){
+           throw new ParseCoordsException("Не могу обработать координаты");
+        }
+
+
         return newCoords;
     }
 
@@ -204,5 +228,9 @@ public class CsvToKmlConverter {
 
     public void setSettings(Settings settings) {
         this.settings = settings;
+    }
+
+    public static interface EventHandler{
+        void handle(String msg);
     }
 }

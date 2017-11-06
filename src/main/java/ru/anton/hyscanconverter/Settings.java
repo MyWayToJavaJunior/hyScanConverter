@@ -96,4 +96,20 @@ public class Settings {
     public void setMarkNameColumn(String markNameColumn) {
         this.markNameColumn = markNameColumn;
     }
+
+    @Override
+    public String toString() {
+        return "Settings{" +
+                "destinationFolder=" + destinationFolder +
+                ", csvPath=" + csvPath +
+                ", picturesPath=" + picturesPath +
+                ", iconPath=" + iconPath +
+                ", imgColumn='" + imgColumn + '\'' +
+                ", coordsColumn='" + coordsColumn + '\'' +
+                ", markNameColumn='" + markNameColumn + '\'' +
+                ", fileName='" + fileName + '\'' +
+                ", categoryName='" + categoryName + '\'' +
+                ", csvReader=" + csvReader +
+                '}';
+    }
 }

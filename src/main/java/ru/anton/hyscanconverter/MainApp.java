@@ -12,7 +12,8 @@ public class MainApp extends Application {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/fxml/main.fxml"));
         Parent parent = loader.load();
-        Scene scene = new Scene(parent, 500, 600);
+        Scene scene = new Scene(parent, 550, 500);
+        primaryStage.setTitle("Конвертация меток из HyScan в kml для SAS.планета");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
