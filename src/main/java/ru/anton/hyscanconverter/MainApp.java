@@ -13,7 +13,7 @@ public class MainApp extends Application {
         loader.setLocation(getClass().getResource("/fxml/main.fxml"));
         Parent parent = loader.load();
         Scene scene = new Scene(parent, 550, 500);
-        primaryStage.setTitle("Конвертация меток из HyScan в kml для SAS.планета");
+        primaryStage.setTitle("HyScanConverter");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
