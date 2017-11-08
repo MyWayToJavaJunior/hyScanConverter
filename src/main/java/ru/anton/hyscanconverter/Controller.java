@@ -81,9 +81,11 @@ public class Controller implements Initializable{
     void showHelp(){
         Stage stage = new Stage();
         AnchorPane pane = new AnchorPane();
-        Scene scene = new Scene(pane, 500, 500);
+        Scene scene = new Scene(pane, 1100, 800);
 
         WebView webView = new WebView();
+        webView.setPrefWidth(1100);
+        webView.setPrefHeight(800);
         WebEngine webEngine = webView.getEngine();
 
         URL url = this.getClass().getResource("/help/help.html");
