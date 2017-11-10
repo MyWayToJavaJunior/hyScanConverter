@@ -36,7 +36,7 @@ public class Controller implements Initializable{
     private final String csvPropertyName = "HyScanConverter.csvPath";
     private final String imgPropertyName = "HyScanConverter.imgPath";
     private final String savePropertyName = "HyScanConverter.savePath";
-    private final String defaultImgColumn = new String("Нет".getBytes(Charset.forName("UTF-8")));
+    private final String defaultImgColumn = "Нет";
     private CsvReader csvReader;
     private PropertiesManager propertiesManager;
 

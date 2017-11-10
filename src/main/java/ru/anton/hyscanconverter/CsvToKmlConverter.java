@@ -1,9 +1,7 @@
 package ru.anton.hyscanconverter;
 
-import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import ru.anton.hyscanconverter.csv.CsvReader;
 import ru.anton.hyscanconverter.exceptions.ParseCoordsException;
 import ru.anton.hyscanconverter.kml.KmlDocument;
@@ -13,19 +11,12 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
-import java.nio.charset.Charset;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class CsvToKmlConverter {
 
@@ -186,7 +177,7 @@ public class CsvToKmlConverter {
             if ((coordsColumn <= record.length-1)){
                 placeMark.setCoordinates(record[coordsColumn]);
 
-                if (!settings.getImgColumn().equals(new String("Нет".getBytes(Charset.forName("UTF-8")))) && (imageColumn <= record.length-1)){
+                if (!settings.getImgColumn().equals("Нет") && (imageColumn <= record.length-1)){
                     String description = "<img src='"+settings.getPicturesPath().toString()+"\\"+record[imageColumn]+"'/>";
                     placeMark.setDescription(description);
                     System.out.println("set");
@@ -231,7 +222,5 @@ public class CsvToKmlConverter {
         this.settings = settings;
     }
 
-    public static interface EventHandler{
-        void handle(String msg);
-    }
+
 }
