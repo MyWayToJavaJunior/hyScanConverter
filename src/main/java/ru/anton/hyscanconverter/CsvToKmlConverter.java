@@ -21,6 +21,7 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
+import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -185,7 +186,7 @@ public class CsvToKmlConverter {
             if ((coordsColumn <= record.length-1)){
                 placeMark.setCoordinates(record[coordsColumn]);
 
-                if (!settings.getImgColumn().equals("Нет") && (imageColumn <= record.length-1)){
+                if (!settings.getImgColumn().equals(new String("Нет".getBytes(Charset.forName("UTF-8")))) && (imageColumn <= record.length-1)){
                     String description = "<img src='"+settings.getPicturesPath().toString()+"\\"+record[imageColumn]+"'/>";
                     placeMark.setDescription(description);
                     System.out.println("set");

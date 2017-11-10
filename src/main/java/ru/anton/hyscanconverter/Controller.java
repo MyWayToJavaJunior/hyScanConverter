@@ -25,6 +25,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -35,8 +36,10 @@ public class Controller implements Initializable{
     private final String csvPropertyName = "HyScanConverter.csvPath";
     private final String imgPropertyName = "HyScanConverter.imgPath";
     private final String savePropertyName = "HyScanConverter.savePath";
+    private final String defaultImgColumn = new String("Нет".getBytes(Charset.forName("UTF-8")));
     private CsvReader csvReader;
     private PropertiesManager propertiesManager;
+
 
     @FXML
     private TextField csvFileField;
@@ -232,7 +235,7 @@ public class Controller implements Initializable{
         imageColumn.valueProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if (newValue.equals("Нет")){
+                if (newValue.equals(defaultImgColumn)){
                     imageFolderBtn.setDisable(true);
                     imageFolderLabel.setDisable(true);
                     imagesFolderField.setDisable(true);
@@ -252,9 +255,9 @@ public class Controller implements Initializable{
         imageColumn.getItems().clear();
         coordsColumn.getItems().clear();
         nameColumn.getItems().clear();
-        imageColumn.getItems().add("Нет");
+        imageColumn.getItems().add(defaultImgColumn);
         imageColumn.getItems().addAll(headers);
-        imageColumn.setValue("Нет");
+        imageColumn.setValue(defaultImgColumn);
         coordsColumn.getItems().addAll(headers);
         coordsColumn.setValue(headers.get(0));
         nameColumn.getItems().addAll(headers);
