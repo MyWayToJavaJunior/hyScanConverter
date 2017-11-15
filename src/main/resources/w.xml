@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
     <Document>
         <Folder>
-            <name>new/category</name>
+            <name/>
             <open>1</open>
             <Style>
                 <ListStyle>
@@ -11,8 +11,9 @@
                 </ListStyle>
             </Style>
             <Placemark>
-                <name>001</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00002_00028.png&amp;#34;/&amp;#62;</description>
+                <name>013_ãàëñ5</name>
+                <description>&lt;img src='C:\Users\User\Desktop\SONAR\converted\28_03\img\T00005_00006.png'/&gt;
+                </description>
                 <Style>
                     <LabelStyle>
                         <color>A600FFFF</color>
@@ -20,19 +21,20 @@
                     <IconStyle>
                         <scale>0.785714285714286</scale>
                         <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
+                            <href/>
                         </Icon>
                         <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
                     </IconStyle>
                 </Style>
                 <Point>
                     <extrude>1</extrude>
-                    <coordinates>60.722096,29.952787,0</coordinates>
+                    <coordinates>29.953721,60.722826,0,0</coordinates>
                 </Point>
             </Placemark>
             <Placemark>
-                <name>002</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00003_00029.png&amp;#34;/&amp;#62;</description>
+                <name>039_ãàëñ1</name>
+                <description>&lt;img src='C:\Users\User\Desktop\SONAR\converted\28_03\img\T00001_00003.png'/&gt;
+                </description>
                 <Style>
                     <LabelStyle>
                         <color>A600FFFF</color>
@@ -40,19 +42,20 @@
                     <IconStyle>
                         <scale>0.785714285714286</scale>
                         <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
+                            <href/>
                         </Icon>
                         <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
                     </IconStyle>
                 </Style>
                 <Point>
                     <extrude>1</extrude>
-                    <coordinates>60.720848,29.954935,0</coordinates>
+                    <coordinates>29.953561,60.723177,0,0</coordinates>
                 </Point>
             </Placemark>
             <Placemark>
-                <name>003</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00004_00033.png&amp;#34;/&amp;#62;</description>
+                <name>040_ãàëñ1</name>
+                <description>&lt;img src='C:\Users\User\Desktop\SONAR\converted\28_03\img\T00001_00043.png'/&gt;
+                </description>
                 <Style>
                     <LabelStyle>
                         <color>A600FFFF</color>
@@ -60,674 +63,14 @@
                     <IconStyle>
                         <scale>0.785714285714286</scale>
                         <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
+                            <href/>
                         </Icon>
                         <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
                     </IconStyle>
                 </Style>
                 <Point>
                     <extrude>1</extrude>
-                    <coordinates>60.720601,29.956852,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>004</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00004_00034.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721012,29.956056,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>005</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00007_00044.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721867,29.950100,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>006</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00007_00047.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721967,29.955696,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>007</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00008_00048.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.722104,29.951903,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>008</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00010_00053.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.724109,29.957386,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>009</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00012_00054.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.724386,29.956167,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>010</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00012_00055.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.724237,29.957025,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>011</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00012_00056.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.723813,29.957016,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>012</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00014_00070.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721767,29.955130,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>013</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00017_00073.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.723376,29.954290,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>014</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00017_00074.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.722940,29.953545,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>015</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00017_00080.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.720884,29.953401,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>016</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00020_00082.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721740,29.953844,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>017</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00020_00081.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.722900,29.953652,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>018</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00002_00027.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.722902,29.953549,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>019</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00003_00030.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.720700,29.956224,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>020</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00003_00027.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.720505,29.956764,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>021</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00004_00036.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721134,29.955396,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>022</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00004_00038.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.720632,29.951260,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>023</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00005_00040.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721473,29.954966,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>024</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00005_00043.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721048,29.955320,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>025</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00007_00045.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.722217,29.953466,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>026</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00008_00049.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721993,29.949425,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>027</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00009_00051.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.722195,29.954434,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>028</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00012_00057.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.722850,29.957211,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>029</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00013_00060.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721585,29.956363,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>030</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00013_00061.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721119,29.955977,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>031</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00013_00063.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.720540,29.956659,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>032</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00013_00066.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.720347,29.956849,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>033</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00013_00068.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.720207,29.956729,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>034</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00016_00071.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.725256,29.954901,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>035</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00017_00076.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.722257,29.953449,0</coordinates>
-                </Point>
-            </Placemark>
-            <Placemark>
-                <name>036</name>
-                <description>&amp;#60;img src=&amp;#34;C:\Users\User\Desktop\SONAR\20171028_01\ScreenShots\newT00017_00078.png&amp;#34;/&amp;#62;</description>
-                <Style>
-                    <LabelStyle>
-                        <color>A600FFFF</color>
-                    </LabelStyle>
-                    <IconStyle>
-                        <scale>0.785714285714286</scale>
-                        <Icon>
-                            <href>C:\Users\User\Desktop\SONAR\20171028_01\метки\files\1.png</href>
-                        </Icon>
-                        <hotspot x="0,5" xunits="fraction" y="0" yunits="fraction"/>
-                    </IconStyle>
-                </Style>
-                <Point>
-                    <extrude>1</extrude>
-                    <coordinates>60.721535,29.954329,0</coordinates>
+                    <coordinates>29.954659,60.722639,0,0</coordinates>
                 </Point>
             </Placemark>
         </Folder>

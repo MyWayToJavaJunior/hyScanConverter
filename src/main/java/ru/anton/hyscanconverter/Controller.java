@@ -22,7 +22,6 @@ import ru.anton.hyscanconverter.exceptions.ParseCoordsException;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.Charset;
@@ -136,14 +135,13 @@ public class Controller implements Initializable{
             String oldPath = propertiesManager.getProperty(savePropertyName);
             if (oldPath!=null){
                 chooser.setInitialDirectory(new File(oldPath));
-                System.out.println(oldPath);
             }
 
             chooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("kml","*.kml"));
             File file = chooser.showSaveDialog(categoryNameField.getScene().getWindow());
 
             if (file!=null){
-                Files.write(file.toPath(), result.getBytes());
+                Files.write(file.toPath(), result.getBytes(Charset.forName("UTF-8")));
                 resultLabel.setText("Готово!");
                 propertiesManager.setProperty(savePropertyName, file.getParent());
                 propertiesManager.save();
